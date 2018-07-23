@@ -4,7 +4,7 @@
 # 配置准备
   首先安装 vue-awesome-swiper
  
-     npm i vue-awesome-swiper -D
+     npm i vue-awesome-swiper -S
   
   安装完成后在main.js中使用对应的插件
   
