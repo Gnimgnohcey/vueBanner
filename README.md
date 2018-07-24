@@ -28,3 +28,8 @@
         </div>
         
    这个轮播具体大小具体位置需要css控制，这里只是做个示范。如果你不需要这个轮播中某些元素，比如滚动条，注释掉即可，代码中都有对应的注释
+   # VueSecondMenu使用说明
+      基于vue以及原生js编写的二级菜单模板，内部除了vue没有使用其他的框架，所以可以达到某些公司的要求
+      使用方法  import SecondoryMenu from './components/SecondoryMenu'
+      Vue.use(SecondoryMenu);
+      具体操作和banner一样都是作为插件使用的，要用组件使用直接导那个vue文件就行，还有一点，这个切换页面基于vue-router所以这一块知识要有了解
