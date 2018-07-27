@@ -29,7 +29,16 @@
         
    这个轮播具体大小具体位置需要css控制，这里只是做个示范。如果你不需要这个轮播中某些元素，比如滚动条，注释掉即可，代码中都有对应的注释
    # VueSecondMenu使用说明
-      基于vue以及原生js编写的二级菜单模板，内部除了vue没有使用其他的框架，所以可以达到某些公司的要求
-      使用方法  import SecondoryMenu from './components/SecondoryMenu'
-      Vue.use(SecondoryMenu);
-      具体操作和banner一样都是作为插件使用的，要用组件使用直接导那个vue文件就行，还有一点，这个切换页面基于vue-router所以这一块知识要有了解
+   基于vue以及原生js编写的二级菜单模板，内部除了vue没有使用其他的框架，所以可以达到某些公司的要求
+      
+   使用方法:
+         import SecondoryMenu from './components/SecondoryMenu'
+          Vue.use(SecondoryMenu);
+   具体操作和banner一样都是作为插件使用的，要用组件使用直接导那个vue文件就行，还有一点，这个切换页面基于vue-router所以这一块知识要有了解
+ # VueSecondMenu2使用说明
+       这是VueSecondMenu2的编写方法，虽然说最后的效果差不多，但底层实现有所不同
+        VueSecondMenu采用的router实现的页面切换
+        而VueSecondMenu2切换用的是动态组件<component :is=""></component>
+        利用对动态组件的切换实现不同目录内容的切换
+        好处：不需要使用vue-router插件，比上面那个的内容要小，适用与就一两个页面内容切换
+        坏处：因为不是用vue-router而是动态的改变组件，导致网页后退和前进功能没有实际的效果
