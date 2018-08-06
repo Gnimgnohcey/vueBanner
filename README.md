@@ -38,6 +38,7 @@
    具体操作和banner一样都是作为插件使用的，要用组件使用直接导那个vue文件就行，还有一点，这个切换页面基于vue-router所以这一块知识要有了解
  # VueSecondMenu2使用说明
    这是VueSecondMenu2的编写方法，虽然说最后的效果差不多，但底层实现有所不同
+ 
    
    VueSecondMenu采用的router实现的页面切换
    
@@ -50,3 +51,5 @@
    坏处：因为不是用vue-router而是动态的改变组件，导致网页后退和前进功能没有实际的效果
  # search
  search.vue文件是在vue用结合animate.css做的搜索项的动画，通过搜索出来的东西实时的加到列表中。这个是模板，后续会发布完整的结合接口的搜索项目
+ # search2
+ 加入了axios获取的接口数据 ps：search和search2都没有使用eslint规范，如果你项目打开了eslint使用的时候请自行修改代码
